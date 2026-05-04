@@ -3,7 +3,7 @@ FROM alpine
 ENV LANG=en_US.utf8
 ENV PGDATA=/var/lib/pgdata
 
-RUN set -e; \
+RUN \
 	apk add --no-cache postgresql; \
 	install --directory \
 		--group postgres \
