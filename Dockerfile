@@ -4,7 +4,8 @@ ENV LANG=en_US.utf8
 ENV PGDATA=/var/lib/pgdata
 
 RUN \
-	apk add --no-cache postgresql; \
+	apk add --no-cache postgresql \
+	postgresql-contrib; \
 	install --directory \
 		--group postgres \
 		--owner postgres \
